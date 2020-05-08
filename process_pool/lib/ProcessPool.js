@@ -20,6 +20,7 @@ function ProcessPool({
   taskName = Date.now(),
   script = '', }) {
   try {
+    // 参数校验
     isCorrectType('task', script, 'function')
     isCorrectType('maxParallelProcess', maxParallelProcess, 'number')
     isCorrectType('timeToClose', timeToClose, 'number')
